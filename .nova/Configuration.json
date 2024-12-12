@@ -1,4 +1,5 @@
 {
+  "editor.default_syntax" : "liquid-html",
   "workspace.color" : 5,
   "workspace.name" : "🏡 www",
   "workspace.preview_append_paths" : false,
