@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{- page.lang | default: site.lang -}}">
+  <head>
+    <meta charset="{{- site.encoding | default: 'utf-8' -}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    {% seo %}
+    {% feed_meta %}
+    {% json_feed_meta %}
+  
+  
+    <link rel="icon" type="image/png" href="{%- link assets/img/favicon.png -%}" />
+    <link rel="stylesheet" href="{%- link assets/css/reset.css -%}" />
+    <link rel="stylesheet" href="{%- link assets/css/base.css -%}" />
+    <link rel="stylesheet" href="{%- link assets/css/layout.css -%}" />
+    <link rel="stylesheet" href="{%- link assets/css/syntax.css -%}" />
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
