@@ -269,3 +269,14 @@
   flex-flow: column nowrap;
   gap: calc(var(--spacing-unit) / 2);
 }
+
+.pagination {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--spacing-unit);
+  justify-content: center;
+}
+
+.pagination a {
+  flex: 0 0 auto;
+}
