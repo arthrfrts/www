@@ -1,3 +1,17 @@
 ---
 layout: default
 ---
+
+{% for post in site.posts | limit: 5 %}
+  <article class="post">
+    <h2 class="post-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    
+    <time class="post-meta">{{ post.date | date: "%d/%m/%Y" }}</time>
+    
+    {% if post.excerpt %}
+      <p>{{ post.excerpt | strip_html | strip_newlines | normalize_whitespace }}</p>
+    {% endif %}
+  </article>
+{% endfor %}
