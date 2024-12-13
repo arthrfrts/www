@@ -6,7 +6,7 @@ title: Blog
 {% assign years = site.posts | where_exp: "item", "item.now != true" | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 {% for year in years %}
-  <section class="blog-section">
+  <section class="page-section blog-section">
     <h2 class="section-title">
       {{ year.name }}
     </h2>

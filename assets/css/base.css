@@ -98,15 +98,6 @@ sup {
 }
 
 
-sup .footnote::before {
-  content: "[";
-}
-
-sup .footnote::after {
-  content: "]";
-}
-
-
 /*
   Links
 */
@@ -214,8 +205,6 @@ ul, ol {
 
 li::marker {
   color: rgb(var(--red));
-  font-family: ui-serif, serif;
-  font-weight: 700;
 }
 
 li  > :last-child {
@@ -358,3 +347,106 @@ video {
 }
 
 
+/*
+  Footnotes
+*/
+
+sup .footnote::before {
+  content: "[";
+}
+
+sup .footnote::after {
+  content: "]";
+}
+
+.footnotes {
+  font-size: 0.875rem;
+  border-top: 1px solid rgb(var(--gray));
+  padding-top: calc(var(--spacing-unit) / 2);
+}
+
+/*
+  Inputs, buttons and knobs
+*/
+
+.input-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: calc(var(--spacing-unit) / 4);
+  margin-bottom: var(--spacing-unit);
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+button,
+textarea,
+.as-button {
+  color: var(--color-foreground);
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  outline: 0 solid;
+  padding: calc(var(--spacing-unit) / 6) calc(var(--spacing-unit) / 4);
+  transition: outline var(--transition-duration);
+}
+
+input:hover,
+input:focus,
+button:hover,
+button:focus,
+textarea:hover,
+textarea:focus,
+.as-button:hover,
+.as-button:focus {
+  outline: var(--outline);
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+textarea {
+  border: 1px solid var(--color-foreground);
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.as-button {
+  display: inline-block;
+  background-color: rgb(var(--green));
+  color: rgb(var(--light));
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: outline var(--transition-duration);
+}
+
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+.as-button:hover,
+.as-button:focus {
+  outline: var(--outline);
+  color: rgb(var(--light));
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+.as-button:active {
+  background-color: rgb(var(--purple));
+  color: rgb(var(--light));
+  outline: 0 solid transparent;
+}

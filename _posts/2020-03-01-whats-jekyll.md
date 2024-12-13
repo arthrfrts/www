@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "What is Jekyll?"
 now: true
 ---
 
