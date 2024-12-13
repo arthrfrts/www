@@ -4,13 +4,13 @@
 
 .site {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 1fr 200px;
   grid-template-rows: auto auto 1fr;
   grid-template-areas: 
-    "content menu"
-    "content footer";
+    "content content menu"
+    "content content footer";
   gap: var(--spacing-unit);
-  max-width: 1100px;
+  max-width: 960px;
   margin: 5vh auto;
   min-height: 100vh;
   padding-left: 2vw;
@@ -31,7 +31,6 @@
 
 .site-content {
   grid-area: content;
-  align-self: stretch;
 }
 
 .site-footer {
@@ -128,4 +127,107 @@
     text-align: right;
     align-self: flex-end;
   }
+}
+
+/*
+  Home
+*/
+
+.home-page {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+.home-section .section-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin-bottom: var(--spacing-unit);
+}
+
+.home-section a {
+  text-decoration-color: var(--color-theme);
+}
+
+.home-section a:hover,
+.home-section a:focus {
+  color: var(--color-theme);
+}
+
+.home-section > :last-child {
+  margin-bottom: 0;
+}
+
+._now {
+  --color-theme: rgb(var(--blue));
+  background-color: rgba(var(--gray), 0.125);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: calc(var(--spacing-unit) / 2);
+  transition-property: background-color, border-color, transform;
+  transition-duration: var(--transition-duration);
+  transform-origin: center;
+}
+
+._now:hover {
+  transform: scale(1.025) rotate(-2deg);
+}
+
+._blog {
+  --color-theme: rgb(var(--orange));
+}
+.home-section._content {
+  --color-theme: rgb(var(--yellow));
+  font-size: 125%;
+}
+
+.home-section._content h1 {
+  margin-bottom: var(--spacing-unit);
+}
+
+/*
+  The blog
+*/
+.blog-section {
+  border-top: 1px solid rgb(var(--orange));
+  padding-top: calc(var(--spacing-unit) / 2);
+}
+
+.blog-section .section-title {
+  margin-bottom: var(--spacing-unit);
+}
+
+/*
+  The posts
+*/
+
+.post + .post {
+  margin-top: calc(var(--spacing-unit) * 1.5);
+}
+
+.post-header {
+  margin-bottom: calc(var(--spacing-unit) / 2);
+}
+
+.post-title {
+  margin-bottom: 0;
+}
+
+.post-meta {
+  font-size: 0.75rem;
+}
+
+.post-content > :last-child {
+  margin-bottom: 0;
+}
+
+.post-footer {
+  display: block;
+  margin-top: var(--spacing-unit);
+  max-width: max-content;
+  border-top: 1px solid rgb(var(--green));
+  padding-top: calc(var(--spacing-unit) / 2);
 }

@@ -2,51 +2,44 @@
 layout: default
 ---
 
-<section class="page-content">
-  {{ content }}
-</section>
-
-{% assign now = site.posts | where_exp: "item", "item.tags contains 'agora'" | first %}
-
-{% if now %}
-  <section id="now" class="now">
-    <h2 class="now-title">
-      👨‍💻
-      <a href="{% link agora.md %}">Agora</a>
-    </h2>
-    
-    {{ now.content }}
-    
-    <footer class="now-footer">
-      <a class="now-permalink" href="{{ now.url | relative_url }}" rel="bookmark">
-        <time datetime="{{ now.date | date_to_xmlschema }}">{{- now.date | date: "%d/%m/%Y às %H:%M" -}}</time>
-      </a>
-    </footer>
+<div class="home-page">
+  <section class="home-section _content">
+    {{ content }}
   </section>
-{% endif %}
-
-{% for post in site.posts | limit: 5 %}
-  <section id="blog" class="blog-list">
-    <h2 class="blog-title">
-      📝
+  
+  {% assign now = site.posts | where: "now", true | first %}
+  
+  {% if now %}
+    <section id="now" class="home-section post _now">
+      <h2 class="section-title">
+        👨‍💻
+        <a href="{% link agora.html %}">Agora</a>
+      </h2>
       
+      <div class="post-content">
+        {{ now.content }}
+      </div>
+      
+      <footer class="post-footer">
+        <a class="post-meta post-permalink" href="{{ now.url | relative_url }}" rel="bookmark">
+          <time datetime="{{ now.last_modified_at | date_to_xmlschema }}">{{- now.last_modified_at | date: "%d/%m/%Y às %H:%M" -}}</time>
+        </a>
+      </footer>
+    </section>
+  {% endif %}
+  
+  <section id="blog" class="home-section _blog">
+    <h2 class="section-title">
+      📝
       <a href="{% link blog.html %}">
         Blog
       </a>
     </h2>
     
-    <article class="post">
-      <h3 class="post-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h3>
-      
-      {% if post.excerpt %}
-        <p>{{ post.excerpt | strip_html | strip_newlines | normalize_whitespace }}</p>
-      {% endif %}
-      
-      <a class="post-permalink" href="{{ post.url | relative_url }}" rel="bookmark">
-        <time class="post-meta">{{ post.date | date: "%d/%m/%Y" }}</time>
-      </a>
-    </article>
+    {% assign blog_posts = site.posts | where_exp: "item", "item.now != true" %}
+  
+    {% for post in blog_posts limit: 5 %}    
+      {% include post.html %}
+    {% endfor %}
   </section>
-{% endfor %}
+</div>

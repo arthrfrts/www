@@ -22,9 +22,8 @@ author:
 # Menu
 main_menu:
   - index.md
-  - agora.md
+  - agora.html
   - blog.html
-  - arquivo.md
   - sobre.md
 
 # Build settings
@@ -37,6 +36,18 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-last-modified-at
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - tags
+  layout: archive
+  permalinks:
+    year: "/blog/:year/"
+    month: "/blog/:year/:month/"
+    tag: "/blog/tags/:name/"
+  slug_mode: latin
 
 seo:
   name: Arthur Freitas
