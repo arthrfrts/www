@@ -3,12 +3,28 @@
   <head>
     <meta charset="{{- site.encoding | default: 'utf-8' -}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {%- capture title -%}
+      {% case page.type %}
+        {% when "tag" %}
+          Posts sobre {{ page.title }} —
+        {% when "year" %}
+          Posts de {{ page.date | date: "%Y" }} —
+        {% when "month" %}
+          Posts de {{ page.date | date: "%m/%Y" }} —
+        {% else %}
+          {% if page.title and page.title != "" %}
+            {{ page.title }} —
+          {% endif %}
+      {% endcase %}
+      
+      {{ site.title }}
+    {%- endcapture -%}
     
-    {% seo %}
+    <title>{{- title | strip_newlines | normalize_whitespace -}}</title>
+    {% seo title=false %}
     {% feed_meta %}
     {% json_feed_meta %}
-  
-  
     <link rel="icon" type="image/png" href="{%- link assets/img/favicon.png -%}" />
     <link rel="stylesheet" href="{%- link assets/css/reset.css -%}" />
     <link rel="stylesheet" href="{%- link assets/css/base.css -%}" />
@@ -16,6 +32,12 @@
     <link rel="stylesheet" href="{%- link assets/css/syntax.css -%}" />
   </head>
   <body>
-    {{ content }}
+    {% include header.html %}
+    
+    <main id="content">
+      {{ content }}
+    </main>
+    
+    {% include footer.html %}
   </body>
 </html>
