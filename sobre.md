@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Sobre
+permalink: /sobre/
 ---
 
 Olá, eu sou o Arthur e eu escrevo esse site.
