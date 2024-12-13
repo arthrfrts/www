@@ -1,0 +1,76 @@
+:root {
+  --dark: 28, 27, 25;
+  --light: 255, 255, 255;
+  --gray: 198, 198, 198;
+  --green: 0, 208, 132;
+  --purple: 155, 81, 224;
+  --red: 207, 46, 46;
+  --pink: 247, 141, 167;
+  --orange: 255, 105, 0;
+  --yellow: 252, 185, 0;
+  --blue: 6, 147, 227;
+  
+  --base-font-family: ui-sans-serif, system-ui, sans-serif;
+  --headings-font-family: var(--base-font-family);
+  --code-font-family: ui-monospace, monospace;
+  
+  --base-font-size: 1rem;
+  --base-line-height: 1.5;
+  --spacing-unit: 1.5rem;
+  
+  --color-background: rgb(var(--light));
+  --color-foreground: rgb(var(--dark));
+  --color-border: rgb(var(--gray));
+  --color-link: rgb(var(--green));
+  --color-active: rgb(var(--orange));
+  --color-visited: rgb(var(--purple));
+  
+  --box-shadow: rgba(37, 38, 39, 0.04) 0 3px 5px -2px, rgba(37, 38, 39, 0.06) 0 7px 14px -5px;
+  --border-radius: 0.625rem;
+  --transition-duration: 0.15s;
+  --outline: 0.5rem solid rgba(var(--green), 0.5);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+
+p, blockquote, pre,
+ul, ol, dl, figure,
+video, audio, iframe,
+table {
+  margin-bottom: var(--spacing-unit);
+}
+
+/*
+  Links
+*/
+
+a {
+  color: currentcolor;
+  text-decoration: underline;
+  text-decoration-color: var(--color-link);
+  transition: color var(--transition-duration);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link);
+}
+
+a:visited {
+  text-decoration-color: var(--color-visited);
+}
+
+a:visited:hover,
+a:visited:focus {
+  color: var(--color-visited);
+}
+
+a:active {
+  color: var(--color-active);
+}
