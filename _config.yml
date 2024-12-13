@@ -21,7 +21,8 @@ author:
 
 # Menu
 main_menu:
-  - index.html
+  - index.md
+  - agora.md
   - blog.html
   - arquivo.md
   - sobre.md
