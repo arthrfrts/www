@@ -12,7 +12,7 @@
   gap: var(--spacing-unit);
   max-width: 1100px;
   margin: 5vh auto;
-  height: 100vh;
+  min-height: 100vh;
   padding-left: 2vw;
   padding-right: 2vw;
 }
