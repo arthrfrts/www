@@ -24,7 +24,7 @@
         {% assign item = site.pages | where: "path", path | first %}
         
         <a class="menu-item" href="{{ item.url | relative_url }}">
-          {{ item.title }}
+          {{ item.title | default: "Início" }}
         </a>
       {% endfor %}
     </nav>
