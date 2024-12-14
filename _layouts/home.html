@@ -10,7 +10,7 @@ layout: default
   {% assign now = site.posts | where: "now", true | first %}
   
   {% if now %}
-    <section id="now" class="home-section post _now">
+    <section class="home-section _now">
       <h2 class="section-title">
         👨‍💻
         <a href="{% link agora.html %}">Agora</a>
@@ -28,7 +28,7 @@ layout: default
     </section>
   {% endif %}
   
-  <section id="blog" class="home-section blog-section _blog">
+  <section class="home-section blog-section _blog">
     <h2 class="section-title">
       📝
       <a href="{% link blog.html %}">
