@@ -42,5 +42,27 @@ content:
     view:
       fields: [ title, date, published ]
       sort: [ date, title, published ]
-        
-        
+  - name: pages
+    label: Pages
+    path: _pages
+    type: collections
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        default: page
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          format: markdown
+      - name: permalink
+        label: Permalink
+        type: string
+        required: true
+    view:
+      fields: [ title, permalink ]

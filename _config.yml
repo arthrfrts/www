@@ -27,6 +27,10 @@ main_menu:
   - sobre.md
 
 # Build settings
+include:
+  - _pages
+  - _redirects
+
 permalink: /blog/:year/:month/:title:output_ext
 
 plugins:
