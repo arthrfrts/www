@@ -31,6 +31,9 @@ content:
         type: rich-text
         options:
           format: markdown
+      - name: excerpt
+        label: Excerpt
+        type: text
       - name: tags
         label: Tags
         type: string
