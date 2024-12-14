@@ -52,6 +52,7 @@ content:
         label: Layout
         type: string
         default: page
+        hidden: true
       - name: title
         label: Title
         type: string
