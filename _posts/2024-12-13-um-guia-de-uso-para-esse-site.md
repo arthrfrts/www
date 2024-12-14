@@ -11,7 +11,7 @@ Querido leitor,
 
 Eu decidi deixar o Tumblr nesse novo ano e continuar minha escrita em um espacinho só meu na internet. Um lugar que eu tenha mais controle e não precise mais de gambiarras para sobreviver ao péssimo editor NPF.
 
-Então! Novo site. Eu decidi não importar o histórico do meu Tumblr para cá. Ele vai continuar disponível em <arthrfrts.tumblr.com> (eu não pretendo parar de usar, inclusive, mas não quero deixar meus textos por lá). Acho que vai ser bacana.
+Então! Novo site. Eu decidi não importar o histórico do meu Tumblr para cá. Ele vai continuar disponível [por lá](https://arthrfrts.tumblr.com) (eu não pretendo parar de usar, inclusive, mas não quero deixar meus textos por lá). Acho que vai ser bacana.
 
 Existem duas sessões de posts no `arthr.me`:
 
