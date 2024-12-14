@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Um guia de uso para esse site
+date: 2024-12-14 01:38:00 -0300
+now: false
 tags:
-- meta
-date: 2024-12-13 23:00 -0300
-excerpt: >-
-  O que tem de novo por aqui, o que vai ser dessa vez.
+  - meta
+published: true
 ---
 Querido leitor,
 
@@ -15,8 +15,8 @@ Então! Novo site. Eu decidi não importar o histórico do meu Tumblr para cá. 
 
 Existem duas sessões de posts no `arthr.me`:
 
-- [Agora]({% link agora.html %}): onde eu posto o que eu estou fazendo, tipo a [tag agora](https://arthrfrts.tumblr.com/tagged/agora), onde eu postava sobre pequenos relatos do dia-a-dia.
-- [Blog]({% link blog.html %}): onde você está agora… é aqui que os “textos” de antes vão. Geralmente, devem ser atualizados com menos frequência.
+*   \[Agora\]({% link agora.html %}): onde eu posto o que eu estou fazendo, tipo a [tag agora](https://arthrfrts.tumblr.com/tagged/agora), onde eu postava sobre pequenos relatos do dia-a-dia.
+*   \[Blog\]({% link blog.html %}): onde você está agora… é aqui que os “textos” de antes vão. Geralmente, devem ser atualizados com menos frequência.
 
 Eu quero manter algumas tags que eu gostava lá no [Pão](https://paomortadela.com.br), como **esquinas**, **achados** e as **impressões**. Com o tempo, vou formando um arquivo com elas.
 
