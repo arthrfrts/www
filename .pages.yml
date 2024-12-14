@@ -46,7 +46,6 @@ content:
     label: Pages
     path: _pages
     type: collection
-    filename: "{fields.title}"
     fields:
       - name: layout
         label: Layout
@@ -66,5 +65,7 @@ content:
         label: Permalink
         type: string
         required: true
+    filename: "{fields.title}"
+    format: yaml-frontmatter
     view:
       fields: [ title, permalink ]
