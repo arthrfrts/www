@@ -1,0 +1,78 @@
+media:
+  input: uploads
+  output: /uploads
+
+content:
+  - name: pages
+    label: Pages
+    type: collection
+    filename: "{fields.title}"
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: body
+        label: Body
+        type: rich-text
+        required: true
+      - name: permalink
+        label: Permalink
+        required: false
+        type: string
+        description: >-
+          The path for this page in your website, such as `example.com/page-title`
+      - name: layout
+        hidden: true
+        default: page
+  - name: posts
+    label: Posts
+    path: _posts
+    type: collection
+    filename: "{year}-{month}-{day}-{fields.title}"
+    view:
+      fields:
+        - title
+        - date
+      primary: title
+      sort: date
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: layout
+        hidden: true
+        type: string
+        default: post
+      - name: title
+        label: Title
+        default: ""
+      - name: date
+        label: Date
+        options:
+        format: "yyyy-MM-dd' 'HH:mm:ss"
+        time: true
+      - name: body
+        label: Body
+        required: true
+        type: rich-text
+      - name: tags
+        label: Tags
+        list: true
+        type: string
+      - name: excerpt
+        label: Excerpt
+        type: text
+        required: false
+      - name: now
+        label: Status
+        type: boolean
+        default: false
+        description: >-
+          If enabled, the post will appear in the “Now” section.
+      - name: published
+        label: Publish
+        type: boolean
+        default: true
+        description: >-
+          Set this to true to publish it in your website.
