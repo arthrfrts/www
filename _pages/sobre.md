@@ -3,16 +3,15 @@ layout: page
 title: Sobre
 permalink: /sobre/
 ---
-
 Olá, eu sou o Arthur e eu escrevo esse site.
 
-Quem nós somos muda constantemente, então eu tento registrar isso no [agora]({% link agora.html %}).
+Quem nós somos muda constantemente, então eu tento registrar isso no \[agora\]({% link \_pages/agora.html %}).
 
 Eu moro em Porto Alegre, eu cuido do Tobias e eu escrevo. Eu faço [pequenos jogos](https://arthr.dev/). Eu já escrevi no [Pão com Mortadela](https://paomortadela.com.br/) e já fiz um [podcast](https://anchor.fm/paomortadela) durante a pandemia para conversar com meus amigos.
 
 Aqui tá uma foto minha comendo uma torradinha da Bauducco durante uma visita da Thaiane aqui em casa:
 
-![Uma foto em ambiente interno mostrando um homem de óculos e barba, usando uma camiseta cinza, comendo algo durante uma refeição. Na mesa há frios, queijos e biscoitos. Em primeiro plano, há um recipiente marrom com tampa decorada com um pequeno ornamento. Ao fundo, vê-se uma estante de madeira com livros e um quadro na parede.]({% link assets/img/profile.jpg %})
+!\[Uma foto em ambiente interno mostrando um homem de óculos e barba, usando uma camiseta cinza, comendo algo durante uma refeição. Na mesa há frios, queijos e biscoitos. Em primeiro plano, há um recipiente marrom com tampa decorada com um pequeno ornamento. Ao fundo, vê-se uma estante de madeira com livros e um quadro na parede.\]({% link assets/img/profile.jpg %})
 
 Eu me interesso principalmente pela intercessão entre arte e tecnologia, e como as duas afetam os símbolos e significados da humanidade. Na prática, é sobre como nossa impressão da cultura muda e se relaciona com os avanços da era digital.
 
@@ -22,7 +21,7 @@ Hoje em dia eu prefiro só escrever por aqui. Eu gosto de pensar no meu site com
 
 Eu desenvolvo alguns projetos em código aberto no [GitHub](https://github.com/arthrfrts) e tenho um diário com impressões sobre os filmes que eu vejo no [Letterboxd](https://letterboxd.com/arthrfrts).
 
-Eu gosto da abordagem de “cartas para o escritor” por aqui, então se algo te interessar e você quiser comentar, sinta-se livre para escrever para <email@arthr.me>.
+Eu gosto da abordagem de “cartas para o escritor” por aqui, então se algo te interessar e você quiser comentar, sinta-se livre para escrever para [email@arthr.me](mailto:email@arthr.me).
 
 Espero que você goste das coisas por aqui.
 
