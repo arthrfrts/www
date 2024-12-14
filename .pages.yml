@@ -65,7 +65,7 @@ content:
         label: Permalink
         type: string
         required: true
-    filename: "{primary}"
+    filename: "{primary}.md"
     format: yaml-frontmatter
     view:
       fields: [ title, permalink ]
