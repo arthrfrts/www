@@ -45,7 +45,7 @@ content:
   - name: pages
     label: Pages
     path: _pages
-    type: collections
+    type: collection
     fields:
       - name: layout
         label: Layout
