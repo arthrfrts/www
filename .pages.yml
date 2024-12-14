@@ -7,6 +7,7 @@ content:
     label: Pages
     type: collection
     filename: "{fields.title}"
+    path: /
     fields:
       - name: title
         label: Title
@@ -46,12 +47,14 @@ content:
         default: post
       - name: title
         label: Title
+        type: string
         default: ""
       - name: date
         label: Date
+        type: date
         options:
-        format: "yyyy-MM-dd' 'HH:mm:ss"
-        time: true
+          format: "yyyy-MM-dd' 'HH:mm:ss"
+          time: true
       - name: body
         label: Body
         required: true
