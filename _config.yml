@@ -21,10 +21,10 @@ author:
 
 # Menu
 main_menu:
-  - index.md
-  - agora.html
-  - blog.html
-  - sobre.md
+  - _pages/index.md
+  - _pages/agora.html
+  - _pages/blog.html
+  - _pages/sobre.md
 
 # Build settings
 include:
