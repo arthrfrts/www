@@ -25,3 +25,4 @@ gem "jekyll-archives", "~> 2.3", :group => :jekyll_plugins
 gem "jekyll-redirect-from", "~> 0.16.0", :group => :jekyll_plugins
 gem "jekyll-last-modified-at", "~> 1.3", :group => :jekyll_plugins
 gem "jekyll-compose", "~> 0.12.0", :group => :jekyll_plugins
+gem "jekyll-relative-links", "~> 0.7.0", :group => :jekyll_plugins

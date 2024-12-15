@@ -21,10 +21,10 @@ author:
 
 # Menu
 main_menu:
-  - _pages/index.md
-  - _pages/agora.html
-  - _pages/blog.html
-  - _pages/sobre.md
+  - index.md
+  - agora.html
+  - blog.html
+  - sobre.md
 
 # Build settings
 include:
@@ -40,6 +40,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-last-modified-at
+  - jekyll-relative-links
 
 jekyll-archives:
   enabled:
@@ -60,3 +61,7 @@ seo:
     - https://linkedin.com/in/arthrfrts
     - https://letterboxd.com/arthrfrts
     - https://www.tumblr.com/arthrfrts
+
+relative_links:
+  enabled: true
+  collections: true

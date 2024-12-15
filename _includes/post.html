@@ -22,6 +22,6 @@
   </header>
   
   <div class="post-content">
-    {{ post.excerpt | strip_html | truncate: 140 | markdownify }}
+    {{ post.description | markdownify }}
   </div>
 </article>

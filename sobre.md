@@ -5,7 +5,7 @@ permalink: /sobre/
 ---
 Olá, eu sou o Arthur e eu escrevo esse site.
 
-Quem nós somos muda constantemente, então eu tento registrar isso no [agora]({% link _pages/agora.html %}).
+Quem nós somos muda constantemente, então eu tento registrar isso no [agora](agora.html).
 
 Eu moro em Porto Alegre, eu cuido do Tobias e eu escrevo. Eu faço [pequenos jogos](https://arthr.dev/). Eu já escrevi no [Pão com Mortadela](https://paomortadela.com.br/) e já fiz um [podcast](https://anchor.fm/paomortadela) durante a pandemia para conversar com meus amigos.
 
