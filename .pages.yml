@@ -21,7 +21,7 @@ content:
         required: true
         options:
           time: true
-          format: "yyyy-MM-dd' 'HH:mm:ss' -0300'"
+          format: "yyyy-MM-dd' 'HH:mm:ss"
       - name: now
         label: Status Post
         type: boolean
@@ -31,13 +31,13 @@ content:
         type: rich-text
         options:
           format: markdown
-      - name: excerpt
-        label: Excerpt
-        type: text
       - name: tags
         label: Tags
         type: string
         list: true
+      - name: description
+        label: Excerpt
+        type: text
       - name: published
         label: Published
         type: boolean
