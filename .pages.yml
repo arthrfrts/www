@@ -45,31 +45,3 @@ content:
     view:
       fields: [ title, date, published ]
       sort: [ date, title, published ]
-  - name: pages
-    label: Pages
-    path: _pages
-    type: collection
-    fields:
-      - name: layout
-        label: Layout
-        type: string
-        default: page
-        hidden: true
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: body
-        label: Body
-        type: rich-text
-        options:
-          format: markdown
-      - name: permalink
-        label: Permalink
-        type: string
-        required: true
-    filename: "{primary}.md"
-    format: yaml-frontmatter
-    view:
-      fields: [ title, permalink ]
-      primary: title
