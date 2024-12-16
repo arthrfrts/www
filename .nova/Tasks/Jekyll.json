@@ -10,7 +10,7 @@
     },
     "run" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\nbundle exec jekyll serve --livereload"
+      "script" : "#!\/bin\/sh\nbundle exec jekyll serve --drafts"
     }
   }
 }
