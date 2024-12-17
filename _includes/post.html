@@ -22,6 +22,6 @@
   </header>
   
   <div class="post-content">
-    {{ post.description | markdownify }}
+    {{ post.description  | default: post.excerpt | markdownify }}
   </div>
 </article>
